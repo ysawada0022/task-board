@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git remote *)",
+      "Bash(git branch *)",
+      "Bash(git push *)",
+      "Bash(gh repo *)",
+      "Bash(gh auth *)",
+      "PowerShell(gh --version)",
+      "PowerShell(gh auth status 2>&1)",
+      "Bash(npm create *)",
+      "Bash(npx --yes create-vite@latest . --template react)",
+      "Read(//c/app/claude/**)",
+      "Bash(rm -rf task-board-tmp)",
+      "Bash(npx --yes create-vite@latest task-board-tmp --template react)",
+      "Bash(npm install *)",
+      "Bash(npx vite *)",
+      "Bash(pkill -f vite)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npm --version)",
+      "Bash(ls \"/c/app/nodejs/\" | head -20; ls \"/c/Users/澤田洋平/AppData/Roaming/npm/\" 2>/dev/null | head -20)"
+    ]
+  }
+}
