@@ -2,6 +2,27 @@
 
 タスク管理ボードアプリケーション用のプロジェクトです。
 
+## デプロイ先
+
+[https://ysawada0022.github.io/task-board/](https://ysawada0022.github.io/task-board/)
+
+`main` ブランチへのpushをトリガーに、GitHub Actions（[.github/workflows/deploy.yml](.github/workflows/deploy.yml)）が自動でビルド・デプロイを行う。
+
+## 技術スタック
+
+- React 19
+- Vite（ビルド・開発サーバー）
+- ESLint
+- プレーンCSS（[src/App.css](src/App.css)）
+- 状態の永続化は `localStorage` を使用（外部の状態管理ライブラリは未使用）
+
+## コンポーネントの命名規約
+
+- コンポーネントファイルは `PascalCase.jsx`（例: [App.jsx](src/App.jsx)）
+- 各コンポーネントには対応する同名のCSSファイルを置く（例: `App.jsx` ⇔ `App.css`）
+- CSSのクラス名は `kebab-case`（例: `task-form`, `task-list`, `delete-button`）
+- 状態変更を行う関数は `動詞 + 対象` の形式で命名する（例: `addTask`, `toggleTask`, `deleteTask`）
+
 ## Git運用ルール
 
 - **コードを変更したら、その都度コミットしてGitHubにプッシュすること。**
